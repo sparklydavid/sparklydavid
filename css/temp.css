@@ -1,0 +1,100 @@
+html {
+    background-color: #9c9c9c;
+    font-family: sans-serif;
+    font-weight: 1000;
+}
+
+body {
+    margin: 0;
+    height: 200vh;
+    background-color: rgb(194, 194, 194);
+
+}
+
+#main-nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+    height: 50px;
+    display: flex;/**/
+    justify-content: space-between;/**/
+}
+
+#main-nav>div {
+    display: block;
+    float: left;
+    overflow: hidden;
+    border-style: dashed;
+    border-color: lightseagreen;
+}
+
+#main-nav>div>ul {
+    list-style: none;
+}
+
+#main-nav>div>ul>li {
+    display: inline;
+}
+
+#navbox-page {
+    position: static;
+    vertical-align: middle;
+
+}
+
+#btn-contact {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: large;
+
+    text-align: center;
+    height: 40px;
+    width: 160px;
+    overflow: hidden;
+    padding: 0 1em;
+    margin-top: 5px;
+    border: 3px solid black;
+    border-radius: 2em;
+    color: black;
+    transition: 150ms ease-in-out;
+
+    text-align: center;
+}
+
+#btn-contact:hover {
+    background-color: rgb(88, 88, 88);
+    border: 3px solid rgb(88, 88, 88);
+    color: white;
+    cursor: pointer;
+}
+
+#main-nav>button {
+    display: block;
+    float: right;
+    margin-right: 2rem;
+}
+
+a.underline {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}
+
+a.underline::before {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 140%;
+    left: -20%;
+    bottom: 0;
+    background-color: rgb(19, 19, 19);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.1s ease-in-out;
+}
+
+a.underline:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
