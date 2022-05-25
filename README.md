@@ -2,4 +2,4 @@
  
 Holly :sparkles: somebody is viewing my profile
 
-Well... I wasn't expect any visitor here, but welcome!
+Well... I didn't expect any visitor here, but welcome!
