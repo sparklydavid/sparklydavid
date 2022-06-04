@@ -9,10 +9,3 @@ Hi!
 
 ✉️ Contact Me: 
 - Email: sparklydavid.contact@gmail.com
-
-
-<hr></hr>
-<!--
-Recent Goal: <!-- [x] to checked -->
-- [ ] Ios flutter flashlight
--->
