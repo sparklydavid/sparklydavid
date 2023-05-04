@@ -93,6 +93,7 @@ body {
   margin: 0 auto;
   background-image: linear-gradient(to bottom right, rgb(92,161,255), rgb(58, 220, 255));
   border-radius: 20px;
+  max-width: 100%;
 }
 
 #intro-card div{
@@ -100,7 +101,6 @@ body {
   padding-left: 5%;
   padding-top: 2%;
   font-size: 2em;
-  max-width: 100%;
 
 }
 
