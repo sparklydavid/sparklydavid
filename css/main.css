@@ -6,23 +6,44 @@ html {
 
 body {
   margin: 0;
-  height: 250vh; /*temp!!!*/
+  height: 250vh;
+  /*temp!!!*/
   background-color: white;
 }
+
 /*--------------------------------*/
 #top-nav {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9); /* transparent */
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   height: 50px;
   display: flex;
+  
   justify-content: space-between;
   align-items: center;
-  /*Ever child item horizontal*/
 }
+#top-page{
+  background-color: red;
+}
+/*--------language selector-------*/
 
-
+.lan-selectWrapper{
+  display:inline-block;
+  overflow:hidden;
+  font-size: 0.5 em;
+  padding-right: 15px;
+}
+.lan-selectBox{
+  font-size: 1em;
+  width:auto;
+  height:30px;
+  border:5px;
+  outline:none;
+}
+option{
+  font-size: 1.2em;
+}
 /*-------------ul li-------------------*/
 
 #top-nav>div>ul>li {
@@ -57,42 +78,24 @@ body {
   transform: scaleX(1);
 }
 
-/*------------Email Button--------------------*/
-
-#btn-contact {
-  font-size: large;
-  height: 40px;
-  width: 160px;
-  border: 2px solid black;
-  border-radius: 1em;
-  color: black;
-  background-color: white;
-  transition: 150ms ease-in-out;
-
-}
-
-#btn-contact:hover {
-  border: 3px solid black;
-  color: white;
-  background-color: black;
-  cursor: pointer;
-}
 /*-------------Intro-------------------*/
-#intro-bg{
+#intro-bg {
   background-color: aquamarine;
-  padding-top:5%;
+  padding-top: 5%;
   padding-bottom: 5%;
 }
+
 #intro-card {
-  width: 800px;
-  height: 500px;
-  margin: 0 auto;/*center it*/
-  background-image: linear-gradient(to bottom right, rgb(92,161,255), rgb(58, 220, 255));
+  width: 1200px;
+  height: 600px;
+  margin: 0 auto;
+  /*center it*/
+  background-image: linear-gradient(to bottom right, rgb(92, 161, 255), rgb(58, 220, 255));
   border-radius: 20px;
   max-width: 100%;
 }
 
-#intro-card div{
+#intro-card div {
   color: white;
   padding-left: 5%;
   padding-top: 2%;
@@ -101,9 +104,22 @@ body {
 }
 
 /*-------------footer-------------------*/
-footer{
+footer {
   /*background-color: rgb(197, 197, 197);*/
   font-size: small;
   font-weight: normal;
-  text-align:center;
+  text-align: center;
+}
+
+/* -----@media !must in bottom!----- */
+
+@media (max-width:800px) {
+  footer{
+    background-color: red;
+  }
+}
+@media (max-width:500px) {
+  footer{
+    background-color: blue;
+  }
 }
