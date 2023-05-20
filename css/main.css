@@ -34,41 +34,31 @@ body {
 #top-nav {
   position: sticky;
   top: 0;
-  background: rgba(255, 255, 255, 0.9); /* transparent */
-
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   height: 50px;
-  display: flex;
+  /* background: rgba(255, 255, 255, 0.795); [transparent] */
+  background: linear-gradient(to top, transparent,rgba(255, 255, 255, 0.644)40%, white 90%);
   
-  justify-content: space-between;
-  align-items: center;
-  /*(that gradian line)*/
-  border-bottom: 3px solid;
+/*   
+  [that gradian line]
+  border-bottom: 2px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, transparent, grey ,transparent);
+  border-image-source: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.753) 40% ,transparent ); */
 }
 
 #top-page{
-  background-color: rgba(255, 255, 0, 0.2);
+  /* background-color: rgba(107, 107, 107, 0.2); */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-/*--------language selector-------*/
 
-.lan-selectWrapper{
-  display:inline-block;
-  overflow:hidden;
-  font-size: 0.5 em;
-  padding-right: 15px;
+#imglogo{
+  display: inline-block;
+  max-height: 100%;
+  max-width: 100%;
 }
-.lan-selectBox{
-  font-size: 1em;
-  width:auto;
-  height:30px;
-  border:5px;
-  outline:none;
-}
-option{
-  font-size: 1.2em;
-}
+
 /*-------------ul li-------------------*/
 
 #top-nav>div>ul>li {
@@ -103,9 +93,9 @@ option{
   transform: scaleX(1);
 }
 
-/*-------------Intro-------------------*/
+/*-------------Home Page-------------------*/
 #intro-bg {
-  background-color: aquamarine;
+  background-color: #cde6f1; /*#cfe0e7;*/
   padding-top: 5%;
   padding-bottom: 5%;
 }
