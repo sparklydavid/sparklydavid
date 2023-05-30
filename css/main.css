@@ -140,7 +140,7 @@ footer {
 
 @media (max-width:900px) {
 
-  #top-nav{
+  #top-nav {
     display: none;
   }
 
@@ -152,8 +152,10 @@ footer {
     padding-top: 50px;
     font-size: 2.5em;
   }
-  #intro-text p{
-    margin: 0;   /* Remove the margin */
+
+  #intro-text p {
+    margin: 0;
+    /* Remove the margin */
   }
 
   #intro-img {
@@ -165,13 +167,20 @@ footer {
     transform: translate(-50%);
   }
 
+
+
   #social-container {
-    
-    width: 450px;
-    overflow: hidden;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: red;
+    clear: left;
+    transform: none;
+    display: flex;
+    height: auto;
+    background-color: blue;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     /* display: flex;
       justify-content: center;
       align-items: center;
