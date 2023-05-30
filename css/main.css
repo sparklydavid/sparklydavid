@@ -1,7 +1,7 @@
 html {
   background-color: white;
-  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  /* font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
 }
 
 body {
@@ -11,41 +11,38 @@ body {
   background-color: white;
 }
 
+.c-darkgray {
+  color: #34445c;
+}
 
 .c-white {
-  color: #F6F7FB;
-}
-.c-darkgray {
-  background-color: #34445c;
+  background-color: #F6F7FB;
 }
 
 .c-paleblue {
-  color: #98c0fc;
+  background-color: #d6f0ff;
 }
 
 .c-lightblue {
-  color: #45abf0;
+  background-color: #45abf0;
 }
-
-
 
 
 /*--------------------------------*/
 #top-nav {
+  z-index: 999;
   position: sticky;
   top: 0;
   height: 50px;
-  /* background: rgba(255, 255, 255, 0.795); [transparent] */
-  background: linear-gradient(to top, transparent,rgba(255, 255, 255, 0.644)40%, white 90%);
-  
-/*   
-  [that gradian line]
+  background: rgba(255, 255, 255, 0.895);
+
+  /* (that nav line)
   border-bottom: 2px solid;
   border-image-slice: 1;
-  border-image-source: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.753) 40% ,transparent ); */
+  border-image-source: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.753) 40% ,transparent );  */
 }
 
-#top-page{
+#top-page {
   /* background-color: rgba(107, 107, 107, 0.2); */
   position: absolute;
   top: 50%;
@@ -53,49 +50,32 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#imglogo{
+#imglogo {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
 }
 
-/*-------------ul li-------------------*/
+/*-------------nav-------------------*/
 
-#top-nav>div>ul>li {
-  /* list-style: none;*/
-  display: inline;
-  margin: 0 20px;
-  font-size: large;
-}
-
-
-.underline {
+nav {
   position: relative;
-  text-decoration: none;
+  display: flex;
+}
+
+nav a {
+  position: relative;
+  padding: 10px 25px;
+  /*increase clickable area*/
+  margin: 0 20px;
+  font-size: 1em;
+  font-weight: bold;
   color: black;
-}
-
-.underline::before {
-  content: "";
-  position: absolute;
-  height: 4px;
-  width: 140%;
-  left: -20%;
-  bottom: 0;
-  background-color: rgb(19, 19, 19);
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.1s ease-in-out;
-}
-
-.underline:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
+  text-decoration: none;
 }
 
 /*-------------Home Page-------------------*/
 #intro-bg {
-  background-color: #cde6f1; /*#cfe0e7;*/
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -105,17 +85,46 @@ body {
   height: 600px;
   margin: 0 auto;
   /*center it*/
-  background-image: linear-gradient(to bottom right, rgb(92, 161, 255), rgb(58, 220, 255));
+  background-image: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
   border-radius: 20px;
   max-width: 100%;
+  position: relative;
 }
 
-#intro-card div {
+#intro-text {
+  position: relative;
   color: white;
   padding-left: 5%;
   padding-top: 2%;
-  font-size: 2em;
+  font-size: 3em;
+}
 
+#intro-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-height: 80%;
+}
+
+#social-container {
+  display: inline-block;
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  transform: translateX(25%);
+  /*move left*/
+}
+
+.social-items {
+  padding: 10px 10px;
+  /*increase clickable size*/
+  filter: brightness(0) invert(1);
+  transition: filter .3s ease;
+}
+
+.social-items:hover {
+  filter: none;
+  cursor: pointer;
 }
 
 /*-------------footer-------------------*/
@@ -128,13 +137,38 @@ footer {
 
 /* -----@media !must in bottom!----- */
 
-@media (max-width:800px) {
-  footer{
-    background-color: red;
+@media (max-width:900px) {
+  footer {
+    /* background-color: red; */
+  }
+
+  #intro-card {
+    text-align: center;
+  }
+
+  #intro-text {
+    font-size: 2.5em;
+  }
+
+  #intro-img {
+    max-height: 50%;
+    width: auto;
+    display: flex;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  #social-container {
+    /* background-color: red; */
+    min-width: 500px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
+
 @media (max-width:500px) {
-  footer{
-    background-color: blue;
+  footer {
+    /* background-color: blue; */
   }
 }
