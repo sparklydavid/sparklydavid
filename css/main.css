@@ -162,7 +162,7 @@ footer {
     max-height: 50%;
     width: auto;
     display: flex;
-    bottom: 25%;
+    bottom: 20%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -174,7 +174,6 @@ footer {
     transform: none;
     display: flex;
     height: auto;
-    background-color: blue;
     justify-content: center;
     position: absolute;
     bottom: 30px;
