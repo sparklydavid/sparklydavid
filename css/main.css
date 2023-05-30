@@ -139,8 +139,9 @@ footer {
 /* -----@media !must in bottom!----- */
 
 @media (max-width:900px) {
-  footer {
-    /* background-color: red; */
+
+  #top-nav{
+    display: none;
   }
 
   #intro-card {
@@ -169,11 +170,5 @@ footer {
     min-width: 400px;
     left: 50%;
     transform: translate(-50%);
-  }
-}
-
-@media (max-width:500px) {
-  footer {
-    /* background-color: blue; */
   }
 }
