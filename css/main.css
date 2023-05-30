@@ -166,10 +166,14 @@ footer {
   }
 
   #social-container {
-    /* background-color: red; */
-    min-width: 350px;
+    /* background-color: red;
+    width: 450px;
     overflow: hidden;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-50%); */
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
   }
 }
