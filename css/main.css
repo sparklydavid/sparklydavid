@@ -166,7 +166,7 @@ footer {
 
   #social-container {
     /* background-color: red; */
-    min-width: 500px;
+    min-width: 400px;
     left: 50%;
     transform: translate(-50%);
   }
