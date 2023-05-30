@@ -99,6 +99,7 @@ nav a {
   font-size: 3em;
 }
 
+
 #intro-img {
   position: absolute;
   bottom: 0;
@@ -147,14 +148,18 @@ footer {
   }
 
   #intro-text {
+    padding-top: 50px;
     font-size: 2.5em;
+  }
+  #intro-text p{
+    margin: 0;   /* Remove the margin */
   }
 
   #intro-img {
     max-height: 50%;
     width: auto;
     display: flex;
-    bottom: 20%;
+    bottom: 25%;
     left: 50%;
     transform: translate(-50%);
   }
