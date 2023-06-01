@@ -99,6 +99,18 @@ nav a {
   font-size: 3em;
 }
 
+.underline {
+  text-decoration: none;
+  position: relative;
+}
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: 4px; /* Adjust this value to move the underline higher or lower */
+  left: 0;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
 
 #intro-img {
   position: absolute;
@@ -166,9 +178,7 @@ footer {
     left: 50%;
     transform: translate(-50%);
   }
-
-
-
+  
   #social-container {
     clear: left;
     transform: none;
