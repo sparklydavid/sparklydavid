@@ -193,6 +193,6 @@ footer {
     margin: 0 auto;
   }
   .social-items{
-    max-width: 42px;
+    max-width: 40px; /*make it a bit smaller*/
   }
 }
