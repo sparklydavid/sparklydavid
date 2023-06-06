@@ -94,7 +94,7 @@ nav a {
 #intro-text {
   position: relative;
   color: white;
-  padding-left: 5%;
+  padding-left: 8%;
   padding-top: 2%;
   font-size: 3em;
 }
@@ -124,7 +124,7 @@ nav a {
   position: absolute;
   bottom: 30px;
   left: 0;
-  transform: translateX(25%);
+  transform: translateX(18%);
   /*move left*/
 }
 
@@ -161,6 +161,7 @@ footer {
   }
 
   #intro-text {
+    padding-left: 0%; /*reset*/
     padding-top: 50px;
     font-size: 2.5em;
   }
