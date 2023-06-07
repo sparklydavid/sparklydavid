@@ -96,7 +96,8 @@ nav a {
   max-width: 70%;
   float: right;
   padding-top: 5px;
-  overflow: hidden;/*?*/
+  padding-right: 20px;
+
 }
 #menu-verticle{
   display: none;
