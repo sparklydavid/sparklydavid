@@ -241,6 +241,14 @@ nav a {
   margin-top: 0;
   text-align: center;
 }
+#flexbox-container{
+  width: 1200px;
+  max-width: 100%;
+  background-color: pink;
+  height: 20px;
+  
+  margin: 0 auto;
+}
 /*-------------footer-------------------*/
 footer {
   font-size: small;
