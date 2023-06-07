@@ -1,3 +1,6 @@
+* {
+  touch-action: manipulation; /*disable double tap zoom feature on mobile*/
+}
 html {
   background-color: white;
   font-family: Arial, sans-serif;
