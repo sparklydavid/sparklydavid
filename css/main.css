@@ -96,7 +96,7 @@ nav a {
   max-width: 70%;
   float: right;
   padding-top: 5px;
-  padding-right: 20px;
+  margin: 0;
 
 }
 #menu-verticle{
@@ -225,7 +225,7 @@ footer {
   }
 
   #hamburger-img{
-    /* display: block; testing */
+    display: block;
   }
 
   #intro-card {
