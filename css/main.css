@@ -29,20 +29,30 @@ body {
 
 
 /*--------------------------------*/
-#top-nav {
+#top-menu {
   z-index: 999;
   position: sticky;
   top: 0;
   height: 50px;
-  background: rgba(255, 255, 255, 0.895);
+  background: rgba(255, 255, 255, 0.9);
 
   /* (that nav line)
   border-bottom: 2px solid;
   border-image-slice: 1;
   border-image-source: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.753) 40% ,transparent );  */
 }
+.menu-option{
+  opacity: 0.6;
+}
+.menu-option:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+#menu-current{
+  opacity: 1;
+}
 
-#top-page {
+#menu-container {
   /* background-color: rgba(107, 107, 107, 0.2); */
   position: absolute;
   top: 50%;
@@ -54,6 +64,12 @@ body {
   display: inline-block;
   max-height: 100%;
   max-width: 100%;
+  opacity: 0.7;
+}
+
+#imglogo:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 /*-------------nav-------------------*/
@@ -73,14 +89,56 @@ nav a {
   color: black;
   text-decoration: none;
 }
+/*-------------Hamburger-------------------*/
+#hamburger-img{
+  display: none;
+  max-height: 70%;
+  max-width: 70%;
+  float: right;
+  padding-top: 5px;
+}
+#menu-verticle{
+  display: none;
+  z-index: 999;
+  width: 100%;
+  height: 50vh;
+  min-height: 300px;
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+}
 
 /*-------------Home Page-------------------*/
 #intro-bg {
+  position: relative;
   padding-top: 5%;
   padding-bottom: 5%;
+  z-index: 0;
+}
+
+.intro-deco {
+  position: absolute;
+}
+
+#deco-spark {
+  height: 200px;
+  top: 200px;
+  left: 200px;
+}
+
+#deco-controller {
+  height: 150px;
+  top: 450px;
+  left: 80px;
+}
+
+#deco-saturn {
+  height: 200px;
+  top: 300px;
+  right: 80px;
 }
 
 #intro-card {
+  z-index: 1;
   width: 1200px;
   height: 600px;
   margin: 0 auto;
@@ -103,10 +161,12 @@ nav a {
   text-decoration: none;
   position: relative;
 }
+
 .underline::before {
   content: "";
   position: absolute;
-  bottom: 4px; /* Adjust this value to move the underline higher or lower */
+  bottom: 4px;
+  /* Adjust this value to move the underline higher or lower */
   left: 0;
   width: 100%;
   border-bottom: 2px solid white;
@@ -149,11 +209,21 @@ footer {
 }
 
 /* -----@media !must in bottom!----- */
+@media(min-width:899px){
+  #menu-verticle{
+    visibility: hidden; /*visibility: hidden != display: none*/
+  }
+}
 
 @media (max-width:900px) {
 
-  #top-nav {
+  
+  #menu-container {
     display: none;
+  }
+
+  #hamburger-img{
+    display: block;
   }
 
   #intro-card {
@@ -161,9 +231,10 @@ footer {
   }
 
   #intro-text {
-    padding-left: 0%; /*reset*/
+    padding-left: 0%;
+    /*reset*/
     padding-top: 50px;
-    font-size: 2.5em;
+    font-size: 2em;
   }
 
   #intro-text p {
@@ -179,7 +250,11 @@ footer {
     left: 50%;
     transform: translate(-50%);
   }
-  
+
+  .intro-deco {
+    visibility: hidden; /*jic*/
+  }
+
   #social-container {
     clear: left;
     transform: none;
@@ -192,7 +267,9 @@ footer {
     right: 0;
     margin: 0 auto;
   }
-  .social-items{
-    max-width: 40px; /*make it a bit smaller*/
+
+  .social-items {
+    max-width: 35px;
+    /*make it a bit smaller*/
   }
 }
