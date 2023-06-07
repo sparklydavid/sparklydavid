@@ -1,10 +1,10 @@
 * {
-  touch-action: manipulation; /*disable mobile double-tap zoom on any element*/
+  touch-action: manipulation; /*!!!disable mobile double-tap zoom on any element*/
 }
 html {
   background-color: white;
   font-family: Arial, sans-serif;
-  -webkit-tap-highlight-color: rgba(0,0,0,0); /*remove mobile click highlight*/
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /*!!!remove mobile click highlight*/
 }
 
 body {
@@ -243,7 +243,6 @@ nav a {
 }
 /*-------------footer-------------------*/
 footer {
-  /*background-color: rgb(197, 197, 197);*/
   font-size: small;
   font-weight: normal;
   text-align: center;
@@ -292,7 +291,7 @@ footer {
   }
 
   .intro-deco {
-    display: none; /*if use visibility hidden will cause resize blank*/
+    display: none; /*!!!if use visibility hidden will cause resize blank*/
   }
 
   #social-container {
