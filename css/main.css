@@ -4,7 +4,7 @@
 html {
   background-color: white;
   font-family: Arial, sans-serif;
-  /* font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif; */
+  -webkit-tap-highlight-color: rgba(0,0,0,0); /*remove mobile click highlight*/
 }
 
 body {
