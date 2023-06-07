@@ -1,5 +1,5 @@
 * {
-  touch-action: manipulation; /*disable double tap zoom feature on mobile*/
+  touch-action: manipulation; /*disable mobile double-tap zoom on any element*/
 }
 html {
   background-color: white;
@@ -9,13 +9,11 @@ html {
 
 body {
   margin: 0;
-  /*temp*/
-  height: 250vh;
   background-color: white;
 }
 
 .c-darkgray {
-  color: #34445c;
+  color: #5e6672;
 }
 
 .c-white {
@@ -26,8 +24,11 @@ body {
   background-color: #d6f0ff;
 }
 
-.c-lightblue {
+.c-test {
   background-color: #45abf0;
+}
+.grey-text{
+  color: #34445c;
 }
 
 
@@ -113,6 +114,24 @@ nav a {
   position: fixed;
 }
 
+#v-option-container{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.v-option{
+  font-size: 1em;
+  font-weight: bold;
+  padding-bottom: 2em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+}
 /*-------------Home Page-------------------*/
 #intro-bg {
   position: relative;
@@ -206,6 +225,22 @@ nav a {
   cursor: pointer;
 }
 
+/*-------------------------------------------*/
+/*-------------CONTENT DIV-------------------*/
+/*-------------------------------------------*/
+
+#content-bg{
+  padding: 0;
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: 20vh; /*temp!*/
+}
+
+.inner-title{
+  margin-top: 0;
+  text-align: center;
+}
 /*-------------footer-------------------*/
 footer {
   /*background-color: rgb(197, 197, 197);*/
@@ -222,7 +257,6 @@ footer {
 }
 
 @media (max-width:900px) {
-
   
   #menu-container {
     display: none;
