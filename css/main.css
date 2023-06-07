@@ -255,7 +255,7 @@ footer {
   }
 
   .intro-deco {
-    visibility: hidden; /*jic*/
+    display: none; /*if use visibility hidden will cause resize blank*/
   }
 
   #social-container {
