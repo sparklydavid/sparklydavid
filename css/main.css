@@ -114,7 +114,6 @@ nav a {
   padding-top: 5px;
   padding-right: 10px;
   margin: 0;
-
 }
 
 #menu-verticle {
@@ -350,6 +349,18 @@ nav a {
   color:white;
   background-color: #45abf0;
   cursor: pointer;
+}
+/*-----------animation test ---*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
 }
 /*-------------footer-------------------*/
 footer {
