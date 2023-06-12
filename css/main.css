@@ -36,7 +36,7 @@ body {
   color: #34445c;
 }
 .ms-emoji{
-  font-family: "Segoe UI Emoji";
+  font-family:  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
 
 /*--------------------------------*/
