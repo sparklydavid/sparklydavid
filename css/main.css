@@ -35,7 +35,9 @@ body {
 .grey-text {
   color: #34445c;
 }
-
+.ms-emoji{
+  font-family: "Segoe UI Emoji";
+}
 
 /*--------------------------------*/
 #top-menu {
@@ -260,33 +262,33 @@ nav a {
 #flexbox-container {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  /*all item align center*/
+  /*start center*/
   width: 1400px;
   max-width: 100%;
   /* background-color: pink; */
   margin: 0 auto;
   /*!!center a div*/
-  background-color: turquoise;
+
   
 }
 
 .flexbox-item {
-  background-color: pink;
-  border-radius: 10px;
-  width: 800px;
+  width: 420px;
   height: 500px;
   margin: 10px;
-  display: flex;
-  flex-direction: column;
+
+  border-radius: 10px;
+  background-color: white;
 }
 
 .img-frame {
-  background-color: yellow;
+  background-color: gray;
   margin: 10px;
   width: auto;
   height: 300px;
-
 }
 
 .thumb-img {
@@ -318,8 +320,13 @@ footer {
   font-size: small;
   font-weight: normal;
   text-align: center;
+  height: 50px;
 }
 
+footer p{
+  margin: 0;
+  padding-top: 1em;
+}
 /* -----@media !must in bottom!----- */
 @media(min-width:899px) {
   #menu-verticle {
@@ -386,15 +393,8 @@ footer {
     /*make it a bit smaller*/
   }
 
-  #flexbox-container {
-    /*become verticle and only one item*/
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   .flexbox-item {
-    max-width: 500px;
-    width: 100%;
+    max-width: 450px;
+    width: 100%; /*prevent overflow, margin still apply*/
   }
 }
