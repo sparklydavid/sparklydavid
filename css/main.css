@@ -35,9 +35,6 @@ body {
 .grey-text {
   color: #34445c;
 }
-.ms-emoji{
-  font-family:  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
 
 /*--------------------------------*/
 #top-menu {
@@ -272,10 +269,11 @@ nav a {
   margin: 0 auto;
   /*!!center a div*/
 
-  
+
 }
 
 .flexbox-item {
+  position: relative;
   width: 420px;
   height: 500px;
   margin: 10px;
@@ -297,36 +295,72 @@ nav a {
   overflow: hidden;
   border-radius: 10px;
 }
-.p-title{
+
+.p-title {
   margin: 0;
   padding-left: .5em;
-  
   font-weight: bold;
   font-size: 2em;
 
+  /*regular text overflow ellipsis*/
+  white-space: nowrap;
   overflow: hidden;
+  text-overflow: ellipsis;
 }
-.p-detail{
+
+.p-detail {
   margin: 0;
   padding-left: 1em;
   padding-top: 1em;
+  padding-right: .5em;
 
   font-weight: bold;
   font-size: 1em;
+
+  /*text overflow ellipsis but allow 3 row:*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+.btn-a{
+  background-color: white;
+  border-radius: 10px;
+  border: 2px solid #45abf0;
+  color: #45abf0;
+  
+  padding: .4em 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  
+  position: absolute; 
+  bottom:1em;
+  right: 1em;
+  transition: .3s ease;
+}
+
+.btn-a:hover{
+  color:white;
+  background-color: #45abf0;
+  cursor: pointer;
+}
 /*-------------footer-------------------*/
 footer {
   font-size: small;
   font-weight: normal;
   text-align: center;
   height: 50px;
+  padding-top: 4em;
 }
 
-footer p{
+footer p {
   margin: 0;
   padding-top: 1em;
 }
+
 /* -----@media !must in bottom!----- */
 @media(min-width:899px) {
   #menu-verticle {
@@ -395,6 +429,7 @@ footer p{
 
   .flexbox-item {
     max-width: 450px;
-    width: 100%; /*prevent overflow, margin still apply*/
+    width: 100%;
+    /*prevent overflow, margin still apply*/
   }
 }
