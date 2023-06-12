@@ -11,27 +11,22 @@
 </head>
 
 <body>
-
-
     <!-- desktop -->
-
     <div id="top-menu">
-        <a href=""><img id=imglogo src="img\avatar-home.png"></a>
-
+        <a href="index.html"><img id=imglogo src="img\avatar-home.png"></a>
         <nav id="menu-container">
-            <a href="" class="menu-option" id="menu-current">HOME</a>
-            <a href="" class="menu-option">PROJECTS</a>
-            <a href="" class="menu-option">CONTACT</a>
+            <a href="index.html" class="menu-option" id="menu-current">HOME</a>
+            <a href="project.html" class="menu-option">PROJECTS</a>
+            <a href="about.html" class="menu-option">ABOUT</a>
         </nav>
         <img id="hamburger-img" onclick="hamburgerClicked()" src="img\hamburger-full.png">
-
     </div>
     <!--mobile-->
     <div id="menu-verticle">
         <div id="v-option-container">
-            <a href="" class="v-option" id="v-current">HOME</a>
-            <a href="" class="v-option">PROJECTS</a>
-            <a href="" class="v-option">CONTACT</a>
+            <a href="index.html" class="v-option">HOME</a>
+            <a href="project.html" class="v-option">PROJECTS</a>
+            <a href="about.html" class="v-option">CONTACT</a>
         </div>
     </div>
 
@@ -65,31 +60,34 @@
         <img class="intro-deco" id="deco-saturn" src="img\w-saturn.png">
         <img class="intro-deco" id="deco-controller" src="img\w-controller.png">
 
-
     </div>
     <div id="content-bg" class="c-paleblue">
         <h1 class="inner-title grey-text"><span class="ms-emoji">✨</span>Feature<span class="ms-emoji">✨</span></h1>
         <div id="flexbox-container">
+            <!--Article-->
             <div class="flexbox-item" id="flexbox-item-1">
-                <div class="img-frame"></div>
+                <div class="img-frame"><img src="img\thumbnails\penguin.jpg"></div>
                 <p class="p-title grey-text">Pengunin Model</p>
                 <p class="p-detail grey-text">This is a penguin model Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit. Ducimus ut blanditiis facilis possimus maiores magnam, dolorum quos itaque
                     reiciendis. Ad optio adipisci voluptatibus vel omnis doloribus quasi fugiat itaque recusandae?</p>
-                <button onclick="open('https://www.example.com')" class="btn-a">View More</button>
+                <button onclick="window.location.href='sub-page/penguin.html';" class="btn-a">View More</button>
             </div>
+            <!--Article-->
             <div class="flexbox-item" id="flexbox-item-2">
-                <div class="img-frame"></div>
+                <div class="img-frame"><img src="img\thumbnails\penguin.jpg"></div>
                 <p class="p-title grey-text"></p>
                 <p class="p-detail grey-text"></p>
-                <button onclick="window.open('https://www.example.com')" class="btn-a">View More</button>
+                <button onclick="window.location.href='sub-page/???.html';" class="btn-a">View More</button>
             </div>
+            <!--Article-->
             <div class="flexbox-item" id="flexbox-item-3">
-                <div class="img-frame"></div>
+                <div class="img-frame"><img src="img\thumbnails\penguin.jpg"></div>
                 <p class="p-title grey-text"></p>
                 <p class="p-detail grey-text"></p>
-                <button onclick="window.open('https://www.example.com')" class="btn-a">View More</button>
+                <button onclick="window.location.href='sub-page/???.html';" class="btn-a">View More</button>
             </div>
+
         </div>
 
     </div>
