@@ -16,6 +16,14 @@ body {
   background-color: white;
 }
 
+.laptop-width{
+  max-width: 1366px;
+  margin: 0 auto;
+  position: relative;
+  /*!!!add border without changeing it's size*/
+  outline: 1px solid black;
+}
+
 .c-darkgray {
   color: #5e6672;
 }
