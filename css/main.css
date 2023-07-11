@@ -20,7 +20,7 @@ body {
   max-width: 1366px;
   margin: 0 auto;
   position: relative;
-  /*!!!add border without changeing it's size*/
+  /*!outline won't change div size!*/
   outline: 1px solid black;
 }
 
