@@ -1,13 +1,11 @@
 * {
-  touch-action: manipulation;
-  /*!!!disable mobile double-tap zoom on any element*/
+  touch-action: manipulation;/*!disable mobile double-tap zoom on any element*/  
 }
 
 html {
   background-color: #d6f0ff;
   font-family: Arial, sans-serif;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  /*!!!remove mobile click highlight*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*!remove mobile click highlight*/
 }
 
 body {
@@ -17,7 +15,8 @@ body {
 }
 
 .laptop-width{
-  max-width: 1366px;
+  /*Make Sure it looks nice on laptop by lineing background things with this*/
+  max-width: 1440px;
   margin: 0 auto;
   position: relative;
   /*!outline won't change div size!*/
@@ -48,22 +47,37 @@ body {
 #top-menu {
   z-index: 999;
   position: sticky;
-  margin: 0;
-  /*JIK: fix gap*/
   top: 0;
   height: 50px;
+  width: 100%;
   background: rgba(255, 255, 255, 0.9);
-
-  /* (that nav line)
-  border-bottom: 2px solid;
-  border-image-slice: 1;
-  border-image-source: linear-gradient(to right, transparent , rgba(0, 0, 0, 0.753) 40% ,transparent );  */
+  display: flex;
+  align-items: center;
+  
 }
 
+#imglogo {
+  height: 50px;
+  opacity: 0.7;
+}
+
+#imglogo:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#menu-container {
+  /* background-color: rgba(107, 107, 107, 0.2); */
+  position: absolute;
+  margin: 10px auto;
+  width: 200px;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
 .menu-option {
   opacity: 0.6;
-  margin: 0px;
-  /*JIK: fix gap*/
+  margin: 0 auto;
+
 }
 
 .menu-option:hover {
@@ -75,25 +89,9 @@ body {
   opacity: 1;
 }
 
-#menu-container {
-  /* background-color: rgba(107, 107, 107, 0.2); */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 
-#imglogo {
-  display: inline-block;
-  max-height: 100%;
-  max-width: 100%;
-  opacity: 0.7;
-}
 
-#imglogo:hover {
-  opacity: 1;
-  cursor: pointer;
-}
+
 
 /*-------------nav-------------------*/
 
@@ -126,7 +124,7 @@ nav a {
 
 #menu-verticle {
   display: none;
-  z-index: 999;
+  z-index: 998;
   width: 100%;
   height: 25vh;
   min-height: 300px;
