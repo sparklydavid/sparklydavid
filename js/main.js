@@ -3,6 +3,7 @@ var hamburgerStatus=false;
 function hamburgerClicked() {
     var menuVerticle = document.getElementById('menu-verticle');
     var hamburgerImg = document.getElementById('hamburger-img');
+    
     if (hamburgerStatus==false){
         menuVerticle.style.display = 'block';
         hamburgerImg.src = 'img/hamburger-x.png';
@@ -15,7 +16,7 @@ function hamburgerClicked() {
     }
 }
 
-/* reveal animation */
+/* reveal animation (article)*/
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
