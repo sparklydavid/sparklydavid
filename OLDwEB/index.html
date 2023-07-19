@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script> <!--defer will run after html body-->
+    <title>Sparkly David</title>
+    <link rel="icon" href="img/tab-icon.png">
+</head>
+
+<body>
+    <!-- desktop -->
+    <div id="top-menu">
+        <a href="index.html"><img id=imglogo src="img\avatar-home.png"></a>
+        <nav id="menu-container">
+            <a href="index.html" class="menu-option" id="menu-current">HOME</a>
+            <a href="project.html" class="menu-option">PROJECTS</a>
+            <a href="about.html" class="menu-option">ABOUT</a>
+        </nav>
+        <img id="hamburger-img" onclick="hamburgerClicked()" src="img\hamburger-full.png">
+    </div>
+    <!--mobile-->
+    <div id="menu-verticle">
+        <div id="v-option-container">
+            <a href="index.html" class="v-option">HOME</a>
+            <a href="project.html" class="v-option">PROJECTS</a>
+            <a href="about.html" class="v-option">ABOUT</a>
+        </div>
+    </div>
+
+    <section id="intro-bg" class="c-paleblue">
+        <h1>TESTING</h1>
+        <div class="laptop-width">
+            <div id="intro-card">
+                <div id="intro-text">
+                    <p>Hello, </p>
+                    <p>This is <span class="underline">Sparkly&nbsp;David</span></p>
+                </div>
+
+
+                <img id=intro-img src="img\avatar-empty.png">
+                <div id="container">
+                    <div id="social-container">
+                        <a href="https://www.youtube.com/@sparklydavid" target="_blank"><img class="social-items"
+                                id="social-yt" src="img\c-yt.png"></a>
+                        <a href="https://twitter.com/sparklydavid" target="_blank"><img class="social-items"
+                                id="social-twitter" src="img\c-twitter.png"></a>
+                        <a href="https://steamcommunity.com/id/sparklydavid/" target="_blank"><img class="social-items"
+                                id="social-steam" src="img\c-steam.png"></a>
+                        <a href="https://sparklydavid.itch.io/" target="_blank"><img class="social-items"
+                                id="social-itch" src="img\c-itch.png"></a>
+                        <a href="https://discord.gg/9CdHedsRzH" target="_blank"><img class="social-items"
+                                id="social-discord" src="img\c-discord.png"></a>
+                        <a href="https://github.com/sparklydavid" target="_blank"><img class="social-items"
+                                id="social-github" src="img\c-github.png"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <img class="intro-deco" id="deco-spark" src="img\w-spark.png">
+            <img class="intro-deco" id="deco-saturn" src="img\w-saturn.png">
+            <img class="intro-deco" id="deco-controller" src="img\w-controller.png">
+
+        </div>
+    </section>
+
+    <section id="content-bg" class="c-paleblue">
+        <h1 class="inner-title grey-text"><span class="ms-emoji">✨</span>Feature<span class="ms-emoji">✨</span></h1>
+        <section class="reveal">
+            <div id="flexbox-container">
+                <!--Article-->
+                <div class="flexbox-item" id="flexbox-item-1">
+                    <!--Link-1:-->
+                    <a href="sub-page\penguin.html">
+                        <div class="img-frame">
+                            <img src="img\thumbnails\penguin.jpg">
+                        </div>
+                    </a>
+                    <p class="p-title grey-text">Pengunin Model</p>
+                    <p class="p-detail grey-text">This is a penguin model Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Ducimus ut blanditiis facilis possimus maiores magnam, dolorum quos itaque
+                        reiciendis. Ad optio adipisci voluptatibus vel omnis doloribus quasi fugiat itaque recusandae?
+                    </p>
+                    <!--Link-2:-->
+                    <button onclick="window.location.href='sub-page/penguin.html';" class="btn-a">View More</button>
+                </div>
+                <!--Article-->
+                <div class="flexbox-item" id="flexbox-item-2">
+                    <!--Link-1:-->
+                    <a href="sub-page\penguin.html">
+                        <div class="img-frame">
+                            <img src="img\thumbnails\penguin.jpg">
+                        </div>
+                    </a>
+                    <p class="p-title grey-text">Pengunin Model</p>
+                    <p class="p-detail grey-text">This is a penguin model Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Ducimus ut blanditiis facilis possimus maiores magnam, dolorum quos itaque
+                        reiciendis. Ad optio adipisci voluptatibus vel omnis doloribus quasi fugiat itaque recusandae?
+                    </p>
+                    <!--Link-2:-->
+                    <button onclick="window.location.href='sub-page/penguin.html';" class="btn-a">View More</button>
+                </div>
+                <!--Article-->
+                <div class="flexbox-item" id="flexbox-item-3">
+                    <!--Link-1:-->
+                    <a href="sub-page\penguin.html">
+                        <div class="img-frame">
+                            <img src="img\thumbnails\penguin.jpg">
+                        </div>
+                    </a>
+                    <p class="p-title grey-text">Pengunin Model</p>
+                    <p class="p-detail grey-text">This is a penguin model Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Ducimus ut blanditiis facilis possimus maiores magnam, dolorum quos itaque
+                        reiciendis. Ad optio adipisci voluptatibus vel omnis doloribus quasi fugiat itaque recusandae?
+                    </p>
+                    <!--Link-2:-->
+                    <button onclick="window.location.href='sub-page/penguin.html';" class="btn-a">View More</button>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+    <footer class="c-paleblue">
+        <p>© 2023. All Rights Reserved to David Wang</p>
+    </footer>
+</body>
+
+
+</html>

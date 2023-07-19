@@ -1,0 +1,30 @@
+@font-face {
+  font-family: jetFont;
+  src: url(../font/JetBrainsMono-Bold.woff2);
+}
+@font-face {
+    font-family: jetFont;
+    src: url(../font/JetBrainsMono-ExtraBold.woff2);
+    font-weight: bold;
+}
+*{
+    font-family: jetFont;
+}
+
+body{
+    margin: 0;
+}
+
+iframe[iframetag] {
+    display: block;
+    border: none;
+    margin: 0;
+    width: 100%;
+ }
+
+#hero-section h1{
+    font-size: 5em;
+    height: 120vh;
+}
+
+
