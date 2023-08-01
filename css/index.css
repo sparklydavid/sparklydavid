@@ -12,9 +12,7 @@
     touch-action: manipulation;/*!disable mobile double-tap zoom on any element*/
 }
 
-body{
-    margin: 0; /*required*/
-}
+
 /* positioning */
 .laptop-width{
     max-width: 1440px;
@@ -33,7 +31,28 @@ body{
 
 /*-------------social-section-------------------*/
 #social-section{
-    height: 60px;
-    width: 100%;
-    background: linear-gradient(to right, rgb(46, 205, 253), rgb(40, 115, 255));
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#social-container{
+    height: 74px;
+    width: 80%;
+    max-width: 500px;
+    background:rgb(50, 180, 255);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#social-section img{
+    height: 36px;
+    margin: 5px;
+    padding: 5px;
+    filter: brightness(0) invert(1);
+
+}
+#social-section img:hover{
+    filter: none;
+    cursor: pointer;
 }

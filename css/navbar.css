@@ -1,3 +1,6 @@
+body{
+    margin: 0; /*required*/
+}
 #page-curtain {
     display: none;
     z-index: 199;
@@ -59,7 +62,7 @@
     position: fixed;
 
     /* outline: 1px solid black; */
-    background-color: #e3e3e3;
+    background-color: #ececec;
     border-radius: 100%;
 
     width: 40px;
