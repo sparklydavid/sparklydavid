@@ -18,14 +18,22 @@ body{
 /* positioning */
 .laptop-width{
     max-width: 1440px;
+    height: 100%;
     margin: 0 auto;
     position: relative;
     /* outline: 1px solid black; */
   }
 
-#hero-section h1{
-    font-size: 5em;
-    height: 120vh;
+/*-------------hero-section-------------------*/
+#hero-section{
+  height: 600px;
+  width: 100%;
 }
 
 
+/*-------------social-section-------------------*/
+#social-section{
+    height: 60px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(46, 205, 253), rgb(40, 115, 255));
+}
