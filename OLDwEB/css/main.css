@@ -1,13 +1,4 @@
 
-/* @font-face {
-  font-family: "myFirstFont";
-  src: url(../test.ttf);
-}
-*{
-  font-family: myFirstFont;
-  background-color: red;
-} */
-
 * {
   touch-action: manipulation;/*!disable mobile double-tap zoom on any element*/  
 }

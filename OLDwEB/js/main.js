@@ -27,7 +27,9 @@ function reveal() {
   
       if (elementTop < windowHeight - elementVisible) {
         reveals[i].classList.add("active");
-      } else {
+      }
+      //remove else will show only once
+       else { 
         reveals[i].classList.remove("active");
       }
     }
