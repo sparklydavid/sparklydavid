@@ -120,7 +120,7 @@ body{
     cursor: pointer;
 }
 
-.m-current {
+#m-current {
     color: white;
     background: linear-gradient(to right, rgb(46, 205, 253), rgb(40, 115, 255));
     /* border-color: #67b3ff */
@@ -149,6 +149,9 @@ body{
 
     #hamburger {
         display: block;
+    }
+    #top-bar{
+        visibility: hidden;
     }
 
 }

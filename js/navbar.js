@@ -7,13 +7,13 @@ function hamburgerClicked() {
 
     if (hamburgerStatus == false) {
         menuVerticle.style.display = 'block';
-        hamburgerImg.src = 'img/hamburger-x.png';
+        hamburgerImg.src = '../img/hamburger-x.png';
         pageCurtain.style.display = 'block';
         hamburgerStatus = true;
     }
     else {
         menuVerticle.style.display = 'none';
-        hamburgerImg.src = 'img/hamburger-full.png';
+        hamburgerImg.src = '../img/hamburger-full.png';
         pageCurtain.style.display = 'none';
         hamburgerStatus = false;
     }
