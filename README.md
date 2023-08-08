@@ -1,5 +1,5 @@
 
-Hi!
+visit
 [my website](https://sparklydavid.github.io/sparklydavid/)
 <!-- put some work in bro! -->
 
