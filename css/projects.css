@@ -1,0 +1,13 @@
+hr{
+    color:red;
+}
+h1::before{
+    content: "#";
+    color: grey;
+}
+h2::before{
+    content: "##";
+    color: grey;
+}
+
+/* width:700 */
