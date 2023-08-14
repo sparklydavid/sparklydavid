@@ -12,7 +12,8 @@ body{
 
 /*-------------Desktop Menu-------------------*/
 #top-bar {
-    position: sticky;
+    /* position: sticky; */
+    position: fixed;
     z-index: 100;
 
     top: 0;
