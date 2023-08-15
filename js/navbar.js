@@ -18,3 +18,21 @@ function hamburgerClicked() {
         hamburgerStatus = false;
     }
 }
+
+
+
+//change topbar color when scroll
+const colorChangingDiv = document.querySelector('#top-bar');
+
+window.addEventListener('scroll', () => {
+    // Calculate how far down the page the user has scrolled
+    const scrollY = window.scrollY;
+
+    // Change the background color based on the scroll position
+    // Here, we're using a threshold of 200 pixels from the top of the page
+    if (scrollY > 1) {
+        colorChangingDiv.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+    } else {
+        colorChangingDiv.style.backgroundColor = 'transparent';
+    }
+});

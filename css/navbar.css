@@ -12,14 +12,13 @@ body{
 
 /*-------------Desktop Menu-------------------*/
 #top-bar {
-    /* position: sticky; */
     position: fixed;
     z-index: 100;
 
     top: 0;
     height: 50px;
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
+    /* background: rgba(255, 255, 255, 0.9); */
     
     display: flex;
     align-items: center;
@@ -38,8 +37,9 @@ body{
     margin: 0 20px;
     font-size: 1em;
     font-weight: bold;
-    color: #1d2633;
+    color: #10161d;
     text-decoration: none;
+    
 }
 
 .menu-option {
@@ -63,7 +63,7 @@ body{
     position: fixed;
 
     /* outline: 1px solid black; */
-    background-color: #ececec;
+    background-color: #e6e6e6e1;
     border-radius: 100%;
 
     width: 40px;
@@ -92,10 +92,21 @@ body{
     width: 40%;
     min-width: 224px;
     height: 100%;
-    margin-top: -50px;
     min-height: 300px;
     background: white;
     position: fixed;
+    animation: menuOpen .2s;
+}
+@keyframes menuOpen {
+	0% {
+		opacity: 0;
+		transform: translateX(-250px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 
 #m-option-container {
@@ -134,7 +145,6 @@ body{
 @media(min-width:899px) {
     #m-menu {
         visibility: hidden;
-        /*visibility: hidden != display: none*/
     }
 
     #page-curtain {
@@ -152,7 +162,8 @@ body{
         display: block;
     }
     #top-bar{
-        visibility: hidden;
+        /* visibility: hidden; */
+        background: rgba(255, 255, 255, 0.9);
     }
 
 }

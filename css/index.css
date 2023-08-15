@@ -2,63 +2,56 @@
   font-family: jetFont;
   src: url(../font/JetBrainsMono-Bold.woff2);
 }
+
 @font-face {
-    font-family: jetFont;
-    src: url(../font/JetBrainsMono-ExtraBold.woff2);
-    font-weight: bold;
+  font-family: jetFont;
+  src: url(../font/JetBrainsMono-ExtraBold.woff2);
+  font-weight: bold;
 }
-*{
-    font-family: jetFont;
-    touch-action: manipulation;/*!disable mobile double-tap zoom on any element*/
+
+* {
+  font-family: jetFont;
+  touch-action: manipulation;
+  /*!disable mobile double-tap zoom on any element*/
 }
 
 /*---------Base-----------*/
-.laptop-width{
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
+body {
+  height: 200vh;
+}
 
-    /* outline: 1px solid black; */
-  }
+.laptop-width {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  outline: 1px solid red;
+}
 
 /*-------------hero-section-------------------*/
-#hero-section{
-  padding-top: 50px;/*unknow why required*/
-  height: 600px;
+#hero-section {
+  height: 400px;
   width: 100%;
   background-image: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
 }
-/*--(Temp)--*/
-#intro-card {
-    z-index: 1;
-    position: relative;
-    width: 1200px;
-    height: 600px;
-    margin: 0 auto;
 
-    
-    border-radius: 20px;
-    max-width: 100%;
+.underline {
+  text-decoration: underline;
+}
 
-    color: white;
-  }
-  
-  #intro-text {
-    position: relative;
-    font-size: 1em;
-  }
-  
-  .underline {
-    text-decoration: underline;
-  }
-  
-#intro-img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    max-height: 80%;
-  }
-  
- 
+#intro-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  font-size: 3em;
+}
+#intro-area p{
+  margin: 0;
+  text-align: center;
+}
+
+
 /*-------------feature-section-------------------*/
