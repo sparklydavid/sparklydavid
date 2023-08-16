@@ -26,14 +26,15 @@ body {
   margin: 0 auto;
   position: relative;
 
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /*-------------hero-section-------------------*/
 #hero-section {
   height: 400px;
   width: 100%;
-  background-image: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
+  background: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
+  /* background-image... */
 }
 
 .underline {
@@ -42,13 +43,14 @@ body {
 
 #intro-area {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
   color: white;
-  font-size: 3em;
+  font-size: 1.5em;
 }
-#intro-area p{
+#intro-area h1{
   margin: 0;
   text-align: center;
 }
