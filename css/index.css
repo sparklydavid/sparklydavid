@@ -1,3 +1,4 @@
+/*---------Base-----------*/
 @font-face {
   font-family: jetFont;
   src: url(../font/JetBrainsMono-Bold.woff2);
@@ -10,14 +11,22 @@
 }
 
 * {
+
   font-family: jetFont;
   touch-action: manipulation;
   /*!disable mobile double-tap zoom on any element*/
 }
 
-/*---------Base-----------*/
+.underline {
+  text-decoration: underline;
+}
+
 body {
-  height: 200vh;
+    /*must*/
+    margin: 0;
+    /*default text color*/
+    color: rgb(52, 52, 52);
+    /* height: 200vh; */
 }
 
 .laptop-width {
@@ -37,10 +46,6 @@ body {
   /* background-image... */
 }
 
-.underline {
-  text-decoration: underline;
-}
-
 #intro-area {
   display: flex;
   flex-direction: column;
@@ -50,10 +55,83 @@ body {
   color: white;
   font-size: 1.5em;
 }
-#intro-area h1{
+
+#intro-area h1 {
+  margin-top: 20px;
   margin: 0;
   text-align: center;
 }
 
 
 /*-------------feature-section-------------------*/
+#feature-title-area{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#feature-title{
+  font-size: 2.4em;
+  background: linear-gradient(to right, rgb(255, 153, 0), rgb(255, 196, 0));
+  -webkit-background-clip: text; /* For Safari */
+  background-clip: text;
+  color: transparent;
+}
+#feature-container{
+  background-color: lightblue;
+  width: 100%;
+}
+.feature-items{
+  background-color: azure;
+
+}
+
+#image-frame {
+  position: relative;
+  margin:auto;
+	width: auto;
+	max-width: 500px;
+	height: auto;
+  max-height:400px;
+	overflow: hidden;
+  border-radius: 20px;
+  
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+#image-frame img {
+  object-fit: cover;
+	transition:0.3s;
+	position: relative;
+  height:450px; /*optional, if image is too big*/ 
+}
+
+#image-frame:hover img {
+	transform: scale(1.1);
+}
+
+.text-area {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+  background-color: rgba(0, 0, 0, 0.50);
+
+	transition: 0.3s;
+	color: #FFFF;
+  
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items: center;
+  justify-content: center;
+}
+.text-area h1{
+  margin: 0;
+}
+.text-area p {
+  margin: 0;
+  font-size: 1.5em;
+}
+.text-area:hover{opacity:0;}
