@@ -93,6 +93,8 @@ body {
   max-width: 1000px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  
   justify-items: flex-start;
   gap: 20px;
 }
@@ -126,7 +128,7 @@ body {
   flex-grow: 1;
   /*remove when mobile-2*/
 
-  width: 500px;
+  width: 400px;
   max-width: 90%;
 
 }
@@ -156,6 +158,7 @@ body {
 }
 
 .text-area {
+  opacity: 0;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -181,5 +184,15 @@ body {
 }
 
 .text-area:hover {
-  opacity: 0;
+  opacity: 1;
+}
+
+/* --------------------------------- */
+/* -----@media !must in bottom!----- */
+/* --------------------------------- */
+
+@media(max-width:900px) {
+  .feature-item{
+    width: 386px;
+  }
 }
