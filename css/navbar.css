@@ -94,6 +94,7 @@
     display: none;
     z-index: 200;
     width: 40%;
+    max-width: 300px;
     min-width: 224px;
     height: 100%;
     min-height: 300px;
