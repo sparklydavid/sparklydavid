@@ -99,7 +99,7 @@ body {
   gap: 20px;
 }
 
-.feature-item {
+.info-card {
   background-color: white;
   width: auto;
   gap: 20px;
@@ -118,7 +118,7 @@ body {
   flex-direction: row-reverse;
 }
 
-.description {
+.info-text {
   /* background-color: red; */
 
   font-size: 1.4em;
