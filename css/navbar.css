@@ -40,21 +40,26 @@
     text-decoration: none;
     opacity: 0.6;
 }
+.main-option img{
+    display: none;
+    position: absolute;
+    width: 16px;
+    margin: 2px -23px;
+}
 
 .main-option:hover {
-    opacity: .8;
+    opacity: .9;
     cursor: pointer;
 }
 
 #main-current {
-    opacity: .8;
+    opacity: .9;
+}
+#main-current img{
+    display: block;
+
 }
 
-#main-current::before {
-    content: '🟡';
-    position: absolute;
-    margin: 0px -30px;
-}
 
 /*-------------Mobile Menu(hamburger)-------------------*/
 #hamburger {
