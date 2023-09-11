@@ -1,40 +1,41 @@
 /*---------Base-----------*/
 @font-face {
-    font-family: jetFont;
-    src: url(../font/JetBrainsMono-Bold.woff2);
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Bold.ttf);
+  font-weight: bold;
 }
 
-@font-face {
-    font-family: jetFont;
-    src: url(../font/JetBrainsMono-ExtraBold.woff2);
-    font-weight: bold;
-}
 
 * {
-    font-family: jetFont;
-    touch-action: manipulation;
-    /*!disable mobile double-tap zoom on any element*/
+  font-family: roboto;
+  touch-action: manipulation;
+  /*!disable mobile double-tap zoom on any element*/
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 body {
-    /*must*/
-    margin: 0;
-    /*default text color*/
-    color: rgb(52, 52, 52);
-    height: 200vh;
+  /*must*/
+  margin: 0;
+  /*default text color*/
+  color: rgb(58, 58, 58);
+  /* height: 200vh; */
+  background-color: #fafafa;
 }
 
 .laptop-width {
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
 
-    /* outline: 1px solid red; */
+  /* outline: 1px solid red; */
 }
 
 /*-------------hero-section-------------------*/
