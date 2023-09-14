@@ -44,7 +44,7 @@
     display: none;
     position: absolute;
     width: 16px;
-    margin: 2px -23px;
+    margin: 1px -23px;
 }
 
 .main-option:hover {
@@ -65,10 +65,11 @@
 /*-------------Mobile Menu(hamburger)-------------------*/
 #hamburger {
     z-index: 999;
+    font-weight: bold;
     visibility: hidden;
     position: fixed;
     display: flex;
-
+    
     align-items: center;
 
     background-color: white;
@@ -97,6 +98,7 @@
 /*--------------------Mobile Menu-------------------------*/
 
 #sub-menu {
+    font-weight: bold;
     display: none;
     z-index: 200;
     width: 40%;

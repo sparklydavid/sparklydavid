@@ -3,6 +3,7 @@
   font-family: roboto;
   src: url(../font/Roboto-Regular.ttf);
 }
+
 @font-face {
   font-family: roboto;
   src: url(../font/Roboto-Bold.ttf);
@@ -25,8 +26,12 @@ body {
   margin: 0;
   /*default text color*/
   color: rgb(58, 58, 58);
-  /* height: 200vh; */
   background-color: #fafafa;
+
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .laptop-width {
@@ -60,6 +65,7 @@ body {
   width: 300px;
   max-width: 54%;
 }
+
 /*--------------------------------------------*/
 /*-------------feature-section----------------*/
 /*--------------------------------------------*/
@@ -127,24 +133,26 @@ body {
 }
 
 
-.panel-store{
+.panel-store {
   border: 2px solid rgb(207, 207, 207);
   background-color: #fafafa;
   border-radius: 8px;
   width: 100%;
 
-  padding:20px 0;
+  padding: 20px 0;
   font-size: 1.3em;
 
-  display:  flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
 
 }
-.panel-store p{
+
+.panel-store p {
   margin: 0;
 }
-.store-title{
+
+.store-title {
   margin: 0;
   padding-bottom: 12px;
   font-size: 1.1em;
@@ -152,16 +160,16 @@ body {
 
 .panel-store a {
   /* color: rgb(0, 140, 255); */
-  color: rgb(255, 140, 9); 
+  color: rgb(255, 140, 9);
   padding: 0 5px;
 }
 
-.store-links{
+.store-links {
   text-align: center;
   padding: 5px 0;
 }
 
-.btn-a{
+.btn-a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #4898ff;
@@ -171,13 +179,14 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.btn-a:hover{
+
+.btn-a:hover {
   color: #4898ff;
   background-color: transparent;
 
 }
 
-.presskit{
+.presskit {
   font-size: 1em;
   color: rgb(97, 97, 97);
 }
@@ -192,7 +201,8 @@ body {
   .panel-desc {
     font-size: 1em;
   }
-  .panel-store{
+
+  .panel-store {
     font-size: 1em;
   }
 

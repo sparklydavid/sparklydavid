@@ -1,94 +1,121 @@
 /*---------Base-----------*/
 @font-face {
-    font-family: roboto;
-    src: url(../font/Roboto-Regular.ttf);
-  }
-  @font-face {
-    font-family: roboto;
-    src: url(../font/Roboto-Bold.ttf);
-    font-weight: bold;
-  }
-  
-  
-  * {
-    font-family: roboto;
-    touch-action: manipulation;
-    /*!disable mobile double-tap zoom on any element*/
-  }
-  
-  .underline {
-    text-decoration: underline;
-  }
-  
-  body {
-    /*must*/
-    margin: 0;
-    /*default text color*/
-    color: rgb(58, 58, 58);
-    /* height: 200vh; */
-    background-color: #fafafa;
-  }
-  
-  .laptop-width {
-    max-width: 1440px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-  
-    /* outline: 1px solid red; */
-  }
-
-/*-------------hero-section-------------------*/
-#hero-section {
-    height: 340px;
-    width: 100%;
-    background: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
-    /* background-image... */
+  font-family: roboto;
+  src: url(../font/Roboto-Regular.ttf);
 }
 
-#intro-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 1.5em;
-
-    color: black;
-    /*for screen blend mode cut out:*/
-
-
+@font-face {
+  font-family: roboto;
+  src: url(../font/Roboto-Bold.ttf);
+  font-weight: bold;
 }
 
-#title-box {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    width: 65%;
-    max-width: 640px;
-    height: 160px;
+* {
+  font-family: roboto;
+  touch-action: manipulation;
+  /*!disable mobile double-tap zoom on any element*/
+}
 
-    background-color: white;
-    /*might want to use caustics texture*/
-    mix-blend-mode: screen;
-    overflow: hidden;
-    font-size: 2.5em;
+.underline {
+  text-decoration: underline;
+}
+
+body {
+  /*must*/
+  margin: 0;
+  /*default text color*/
+  color: rgb(58, 58, 58);
+  /* height: 200vh; */
+  background-color: #fafafa;
+
+  /*for empty footer*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.laptop-width {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  /* outline: 1px solid red; */
+}
+
+/*-------------------------------------------*/
+/*--------------top-section------------------*/
+/*-------------------------------------------*/
+#top-section {
+  /* background-color: yellow; */
+  height: 90px;
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+  justify-content: center;
+}
+#top-section p{
+  visibility: hidden;
+}
+
+/*-------------------------------------------*/
+/*--------------card-section---------------*/
+/*-------------------------------------------*/
+#card-area {
+  background-color: aquamarine;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card-container {
+  background-color: pink;
+  /* height: 10vh; */
+  width: 100%;
+  max-width: 900px;
+  margin: 20px 0;
+  /* min-height: 73vh; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+#card-container hr{
+  width: 90%;
+}
+
+.card {
+  width: 95%;
+  height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 2px 5px #0f0f0f41);
+}
+
+.frame {
+  background-color: greenyellow;
+	border-top: 100px solid #555;
+	border-right: 30px solid transparent;
+
+	height: 0;
+  width: 30%;
+  min-width: 200px;
 }
 
 /* --------------------------------- */
 /* -----@media !must in bottom!----- */
 /* --------------------------------- */
 @media (max-width:900px) {
-    #hero-section {
-        height: 240px;
-    }
+  #top-section p{
+    visibility: visible;
+  }
 
-    #title-box {
-        height: 100px;
-        max-width: 340px;
-        font-size: 1.4em;
-    }
+  #title-box {
+    height: 100px;
+    max-width: 340px;
+    font-size: 1.4em;
+  }
 }

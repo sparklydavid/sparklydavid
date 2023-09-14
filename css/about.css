@@ -3,6 +3,7 @@
   font-family: roboto;
   src: url(../font/Roboto-Regular.ttf);
 }
+
 @font-face {
   font-family: roboto;
   src: url(../font/Roboto-Bold.ttf);
@@ -27,6 +28,11 @@ body {
   color: rgb(58, 58, 58);
   /* height: 200vh; */
   background-color: #fafafa;
+
+  /*for empty footer*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .laptop-width {
@@ -38,58 +44,38 @@ body {
   /* outline: 1px solid red; */
 }
 
-/*-------------hero-section-------------------*/
-#hero-section {
-    height: 340px;
-    width: 100%;
-    background: linear-gradient(to bottom right, rgb(68, 146, 255), rgb(78, 222, 255));
-    /* background-image... */
+/*-------------------------------------------*/
+/*--------------top-section------------------*/
+/*-------------------------------------------*/
+#top-section {
+  /* background-color: yellow; */
+  height: 90px;
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
+  justify-content: center;
+}
+#top-section p{
+  visibility: hidden;
 }
 
-#intro-area {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 1.5em;
-    
-    color: black;/*for screen blend mode cut out:*/
+/*-------------------------------------------*/
+/*--------------about-section------------------*/
+/*-------------------------------------------*/
 
-
-}
-
-#title-box {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    width: 65%;
-    max-width: 640px;
-    height: 160px;
-
-    background-color: white; /*might want to use caustics texture*/
-    mix-blend-mode: screen;
-    overflow: hidden;
-    font-size: 2.5em;
-
-
-
-}
 
 /* --------------------------------- */
 /* -----@media !must in bottom!----- */
 /* --------------------------------- */
 @media (max-width:900px) {
-    #hero-section {
-        height: 240px;
-    }
 
-    #title-box {
-        height: 100px;
-        max-width: 340px;
-        font-size: 1.4em;
-    }
+  #top-section p {
+    visibility: visible;
+  }
+
+  #title-box {
+    height: 100px;
+    max-width: 340px;
+    font-size: 1.4em;
+  }
 }
