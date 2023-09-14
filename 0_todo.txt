@@ -5,3 +5,7 @@ ffd800
 
 Background is 1200px wide jpg
 ~799px width
+
+Post:
+put "postname.html" folder directly! without sub folder just under sparkly david!
+contain html and css (css with same name like "template.css")
