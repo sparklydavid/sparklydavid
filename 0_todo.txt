@@ -1,0 +1,7 @@
+Pink/Yellow/Blue:
+ff438b
+ffd800
+00c8ff
+
+Background is 1200px wide jpg
+~799px width
