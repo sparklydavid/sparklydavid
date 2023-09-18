@@ -58,6 +58,7 @@ body {
 
 #top-section p {
   visibility: hidden;
+  margin-top: 40px;
 }
 
 /*-------------------------------------------*/
@@ -72,16 +73,12 @@ body {
 }
 
 #card-container {
-  background-color: pink;
-  /* height: 10vh; */
   width: 100%;
   max-width: 900px;
   margin: 20px 0;
-  /* min-height: 73vh; */
 
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -91,40 +88,43 @@ body {
 
 .card {
   width: 95%;
-  height: 260px;
-  background-color: white;
+  background-color: #fafafa;
   border-radius: 10px;
-  filter: drop-shadow(0px 2px 5px #0f0f0f41);
+
   overflow: hidden;
   display: flex;
 }
 .card-text{
   flex: 1;
-  background-color: red;
+  /* background-color: gold; */
   border-radius: 20px;
 }
 
 .frame {
-  /* position: relative; */
-  /* margin: auto; */
-  height: 260px;
-  width: 340px;
-  overflow: hidden;
-
+  background-color: grey;
+  height: 180px;
+  width: 260px;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  /* clockwise */
+  clip-path: polygon(0 0, 0 100%, 90% 100%,100% 0);
 }
 
 .frame img {
+
   object-fit: cover;
   transition: 0.3s;
   position: relative;
   /* height:450px;  */
 }
-
-.card :hover img {
-  transform: scale(1.1);
+.card:hover{
+  cursor: pointer;
+  filter: drop-shadow(0px 2px 5px rgba(15, 15, 15, 0.41));
+}
+.card:hover .frame img {
+  transform: scale(1.2);
+  
 }
 
 /* --------------------------------- */
@@ -141,23 +141,32 @@ body {
     font-size: 1.4em;
   }
   .card{
-    height: 500px;
+    /* height: 500px; */
+    min-height: 350px;
     width: auto;
     max-width: 100%;
-    background-color: blue;
+    /* background-color: bisque; */
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    overflow: hidden;
+
+    filter: drop-shadow(0px 2px 5px rgba(15, 15, 15, 0.41));
   }
   .frame{
-    width: 100%;
-    max-width: 500px;
+    clip-path: none;
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
   }
   .card-text{
-    width: 100%;
-    max-width: 460px;
+    /* min-height: 500px; */
+    width: 300px;
+    max-width: 100%;
   }
   #card-container hr {
-    max-width: 430px;
+    /* max-width: 300px; */
+    /* display: none; */
+    visibility: hidden;
   }
 }

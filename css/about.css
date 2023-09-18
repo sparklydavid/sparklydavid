@@ -57,6 +57,7 @@ body {
 }
 #top-section p{
   visibility: hidden;
+  margin-top: 40px;
 }
 
 /*-------------------------------------------*/
