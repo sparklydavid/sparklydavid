@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/footer.css">
 
-    <script defer src="js/posts.js"></script><!-- defer = load after html: -->
     <script defer src="js/navbar.js"></script>
+    <script src="js/posts.js"></script><!-- defer = load after html: -->
 
     <title>Sparkly David</title>
     <link rel="icon" href="img/tab-icon.png"><!-- .ico prefered -->
@@ -46,37 +46,45 @@
     <div id="top-section">
         <p>POST</p>
     </div>
+    <p style="text-align: center; font-size: 3em; margin: 0;">🚧</p>
+    <p style="text-align: center; margin: 0;">under construction...</p>
+
     <!------------card-section------------>
-    <!-- <p style="text-align: center; font-size: 3em;">🚧</p> -->
-    <!-- <p style="text-align: center;">under construction...</p> -->
     <section id="card-section">
         <div class="laptop-width">
             <div id="card-area">
                 <div id="card-container">
                     <hr>
 
-                    <div class="card">
+                    <div class="card" onclick="cardClicked()" data-link="#" data-new-tab>
+                        <div class="frame">
+                            <img src="img/thumbnails/penguin.jpg">
+                        </div>
+                        <div class="card-text">
+                            <p class="post-title">Placeholder</p>
+                            <p class="post-context">aaaaaa</p>
+
+                        </div>
+
+                    </div>
+  
+
+                    <hr>
+
+                    <div class="card" onclick="cardClicked()" data-link="#">
                         <div class="frame">
                             <img src="img/placeholder.jpg">
                         </div>
                         <div class="card-text">
-
+                            <p class="post-title">Placeholder</p>
+                            <p class="post-context">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+                                odio pariatur necessitatibus tempore voluptates aut voluptatem repellendus nulla, autem
+                                explicabo dolores laudantium nihil omnis hic sint aspernatur optio libero eaque.</p>
                         </div>
-                    </div>
-                    
-                    <hr>
-
-                    <div class="card">
-                        <div class="frame">
-                            
-                        </div>
-                        <div class="card-text">
-
-                        </div>
-
                     </div>
 
                     <hr>
+
                 </div>
 
 

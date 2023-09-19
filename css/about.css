@@ -63,7 +63,19 @@ body {
 /*-------------------------------------------*/
 /*--------------about-section------------------*/
 /*-------------------------------------------*/
+#about-area{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#about-container{
+  background-color: aquamarine;
+  height: 100vh;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 12px;
 
+}
 
 /* --------------------------------- */
 /* -----@media !must in bottom!----- */
