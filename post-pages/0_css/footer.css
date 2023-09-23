@@ -1,0 +1,30 @@
+#extend-footer{
+    /*for page that's too short*/
+    flex-grow: 1;
+}
+footer{
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    color: rgb(117, 117, 117);
+}
+
+footer a{
+    /* padding: 0 20px; */
+}
+
+.icon-btn img{
+    width: 28px;
+    opacity: 0.5;
+}
+.icon-btn img:hover{
+    width: 28px;
+    opacity: .9;
+}
+
+#soc-btn-container img{
+    padding:0 6px;
+}
