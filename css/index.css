@@ -37,6 +37,7 @@ body {
 .laptop-width {
   max-width: 1440px;
   height: 100%;
+  /*center!*/
   margin: 0 auto;
   position: relative;
 
@@ -71,7 +72,7 @@ body {
 /*-------------feature-section----------------*/
 /*--------------------------------------------*/
 #feature-section {
-  display: none;
+  /* display: none; */
 }
 
 #feature-area {
@@ -191,7 +192,42 @@ body {
   font-size: 1em;
   color: rgb(97, 97, 97);
 }
-
+/*--------------------------------------------*/
+/*-------------post-section----------------*/
+/*--------------------------------------------*/
+#post-area{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  /* background-color: pink; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; */
+}
+#post-wrapper{
+  /* background-color: blue; */
+  /*center!*/
+  margin: auto;
+  width: 90%;
+}
+#post-head{
+  background-color: rgb(255, 242, 64);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  padding-top: 1px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#post-body{
+  background-color: rgb(255, 242, 64);
+  height: 100px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
 
 
 /* --------------------------------- */
