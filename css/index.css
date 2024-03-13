@@ -136,6 +136,9 @@ body {
 
 
 .panel-store {
+
+  visibility: hidden;
+
   border: 2px solid rgb(207, 207, 207);
   background-color: #fafafa;
   border-radius: 8px;
