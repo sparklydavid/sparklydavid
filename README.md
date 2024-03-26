@@ -3,7 +3,7 @@ Hi! My name is David.
 
 [My Website Link](https://sparklydavid.github.io/sparklydavid/)
 <!-- put some work in bro! -->
-[My CodePen Link](https://codepen.io/your-work](https://codepen.io/Sparkly-David)
+[CodePen Link](https://codepen.io/Sparkly-David)
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=sparklydavid)](https://github.com/sparklydavid/github-readme-stats)
 
