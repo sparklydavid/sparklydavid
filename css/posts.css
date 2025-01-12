@@ -87,12 +87,14 @@ body {
 }
 
 .card {
+  margin: 10px;
   width: 95%;
   background-color: #fafafa;
   border-radius: 10px;
 
   overflow: hidden;
   display: flex;
+  filter: drop-shadow(0px 2px 5px rgba(15, 15, 15, 0.41));
 }
 
 .card-text {
@@ -124,7 +126,7 @@ body {
 
 .card:hover {
   cursor: pointer;
-  filter: drop-shadow(0px 2px 5px rgba(15, 15, 15, 0.41));
+
 }
 
 .card:hover .frame img {

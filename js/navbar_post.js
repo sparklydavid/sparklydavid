@@ -8,7 +8,7 @@ function hamburgerClicked() {
 
     if (hamburgerStatus == false) {
         subMenu.style.display = 'block';
-        hamburgerImg.src = 'img/hamburger-x.png';
+        hamburgerImg.src = '../img/hamburger-x.png';
         hamburgerTxt.textContent="CLOSE";
         pageCurtain.style.display = 'block';
 
@@ -16,7 +16,7 @@ function hamburgerClicked() {
     }
     else {
         subMenu.style.display = 'none';
-        hamburgerImg.src = 'img/hamburger-full.png';
+        hamburgerImg.src = '../img/hamburger-full.png';
         hamburgerTxt.textContent="MENU";
         pageCurtain.style.display = 'none';
 
