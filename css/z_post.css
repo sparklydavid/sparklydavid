@@ -1,0 +1,32 @@
+#div-area {
+    width: 90%;
+    max-width: 800px;
+
+    padding: 20px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: pink; */
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+.img-big {
+    width: 800px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* --------------------------------- */
+/* -----@media !must in bottom!----- */
+/* --------------------------------- */
+
+@media(max-width:900px) {
+    h1 {
+        font-size: 2em;
+    }
+
+}
